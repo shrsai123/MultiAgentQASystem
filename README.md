@@ -127,7 +127,7 @@ The system supports the following Android tasks:
 ## 📁 Project Structure
 
 ```
-MOBILE-QA/
+MultiAgentQASystem/
 ├── agents/
 │   ├── __pycache__/
 │   ├── __init__.py            # Agents module initialization
