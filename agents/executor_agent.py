@@ -141,7 +141,7 @@ class ExecutorAgent(BaseAgent):
                 
                 await self.send_message(
                     MessageType.EXECUTION_FAILED,
-                    None,  # Broadcast
+                    None, 
                     {
                         "error": error_msg,
                         "action": action.action_type.value,
@@ -546,7 +546,6 @@ class ExecutorAgent(BaseAgent):
     
     def _detect_screen_type(self, elements: List[Dict]) -> str:
         """Detect type of screen from UI patterns"""
-        # Check for common screen patterns
         has_back_button = any("back" in e.get("id", "").lower() for e in elements)
         has_list = sum(1 for e in elements if "recycler" in e.get("class", "").lower()) > 0
         has_input = sum(1 for e in elements if "edittext" in e.get("class", "").lower()) > 0
