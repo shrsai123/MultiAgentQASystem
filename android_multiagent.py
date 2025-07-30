@@ -6,7 +6,7 @@ from agents.planner_agent import PlannerAgent
 from agents.verifier_agent import VerifierAgent
 from agents.supervisor_agent import SupervisorAgent
 from agents.executor_agent import ExecutorAgent
-from android_env_simulator import AndroidEnv, Action, ActionType, Subgoal
+from android_integration.android_env_simulator import AndroidEnv, Action, ActionType, Subgoal
 import time,uuid
 from core.agent_base import Message, MessageType
 from core.message_bus import MessageBus

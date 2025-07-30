@@ -4,7 +4,7 @@ import json
 from openai import OpenAI
 from typing import Dict, List, Optional
 import asyncio,logging
-from android_env_simulator import Subgoal,Action,ActionType
+from android_integration.android_env_simulator import Subgoal,Action,ActionType
 
 class PlannerAgent(BaseAgent):
     """Planner Agent with GPT-4 integration"""

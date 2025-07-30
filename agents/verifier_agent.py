@@ -4,7 +4,7 @@ from typing import Dict
 import asyncio
 from openai import OpenAI
 import json,logging
-from android_env_simulator import Subgoal,TestResult, ActionType, Action
+from android_integration.android_env_simulator import Subgoal,TestResult, ActionType, Action
 
 class VerifierAgent(BaseAgent):
     """Verifier Agent with GPT-4 integration"""

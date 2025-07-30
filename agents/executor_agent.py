@@ -7,7 +7,7 @@ from enum import Enum
 
 from core.agent_base import BaseAgent, MessageType, Message
 from core.message_bus import MessageBus
-from android_env_simulator import AndroidEnv, Action, ActionType, Subgoal
+from android_integration.android_env_simulator import AndroidEnv, Action, ActionType, Subgoal
 
 class ExecutorAgent(BaseAgent):
     """Enhanced Executor Agent - Inspects UI hierarchy and executes subgoals"""
